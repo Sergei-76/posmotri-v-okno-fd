@@ -1,1 +1,1 @@
-https://github.com/Sergei-76/posmotri-v-okno-fd
+https://github.com/Sergei-76/posmotri-v-okno-fd.git
