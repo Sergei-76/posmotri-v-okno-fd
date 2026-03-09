@@ -58,10 +58,10 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  justify-content: center;
   block-size: 534px;
+  justify-content: center;
   align-items: flex-end;
+  gap: 30px;
 }
 
 .search-form {
@@ -72,6 +72,8 @@ ol {
 }
 
 .content__list-container {
+  display: flex;
+  flex-direction: column;
   max-block-size: 298px;
   min-width: fit-content;
   overflow-y: auto;
@@ -79,18 +81,11 @@ ol {
   position: relative;
 }
 
-.content__list {
-  display: flex;
-  flex-direction: column;
-  min-block-size: 103px;
-  width: 390px;
-}
-
 .content__details {
   display: flex;
   flex-direction: column;
   min-width: 399px;
-  block-size: auto;
+  block-size: 534px;
   gap: 26px;
 }
 
@@ -122,13 +117,13 @@ ol {
   flex-direction: column;
   min-width: 711px;
   block-size: 456px;
+  gap: 16px;
 }
 
 .result__video-container {
   display: flex;
   max-width: 711px;
   max-block-size: 456px;
-  margin-bottom: 16px;
   position: relative;
 }
 
@@ -139,7 +134,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed" sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -277,7 +272,6 @@ ol {
   height: 19px;
   border: 1px solid rgba(255, 255, 255, 1);
   padding: 1px;
-  position: relative;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -287,7 +281,6 @@ ol {
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -298,7 +291,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover .search-form__label-text {
+.search-form:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -342,20 +335,4 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #ffffff;
-}
-
-.preloader-template {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
 }
