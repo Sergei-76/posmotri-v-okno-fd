@@ -58,7 +58,6 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
-  block-size: 534px;
   justify-content: center;
   align-items: flex-end;
   gap: 30px;
@@ -85,7 +84,6 @@ ol {
   display: flex;
   flex-direction: column;
   min-width: 399px;
-  block-size: 534px;
   gap: 26px;
 }
 
@@ -160,8 +158,12 @@ ol {
   color: #ffffff;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content__card-link_current:active {
-  background-color: rgba(84, 80, 80, 1);
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -181,7 +183,6 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -197,6 +198,9 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 0.8;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;  
   line-clamp: 4;
   overflow: hidden;
 }
@@ -229,7 +233,7 @@ ol {
   flex-direction: row;
   align-items: center;
   width: min-content;
-  gap: 5px; /* */
+  gap: 5px;
 }
 
 .search-form__textfield {
@@ -238,8 +242,8 @@ ol {
   min-width: 225px;
   height: 27px;
   border: none;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   color: #fff;
   background-color: transparent;
   font-family: "Fira Sans Condensed", Arial, sans-serif;
@@ -270,7 +274,7 @@ ol {
   display: flex;
   width: 19px;
   height: 19px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid #ffffff;
   padding: 1px;
 }
 
@@ -291,7 +295,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form:hover .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
