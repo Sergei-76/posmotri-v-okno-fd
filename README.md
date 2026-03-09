@@ -1,1 +1,1 @@
-https://github.com/Sergei-76/ono-tebe-nado-fd
+https://github.com/Sergei-76/posmotri-v-okno-fd
