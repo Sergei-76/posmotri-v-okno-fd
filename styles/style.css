@@ -57,9 +57,6 @@ ol {
 
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
   gap: 30px;
 }
 
@@ -114,7 +111,6 @@ ol {
   display: flex;
   flex-direction: column;
   min-width: 711px;
-  block-size: 456px;
   gap: 16px;
 }
 
@@ -122,6 +118,7 @@ ol {
   display: flex;
   max-width: 711px;
   max-block-size: 456px;
+  margin-top: 78px;
   position: relative;
 }
 
